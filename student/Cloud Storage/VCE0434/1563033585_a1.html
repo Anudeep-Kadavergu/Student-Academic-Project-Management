@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+	
+.drop form{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 260px;
+  height: 60px;
+  border: 2px dashed BLACK;
+}
+.drop p{
+  width: 260px;
+  height: 60px;
+  text-align: center;
+  line-height: 35px;
+  color: black;
+  font-family: Arial;
+}
+.drop input{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="drop">
+	<form action="upload.php" method="POST">
+  <input type="file" multiple>
+  <p>Drag your files here or click Here</p>
+  <button type="submit">Upload</button>
+</form>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $('form input').change(function () {
+    $('form p').text(this.files.length + " file(s) selected");
+  });
+});
+</script>
+</body>
+</html>
