@@ -41,6 +41,5 @@ Each module are independent of each other but shares common data between them(My
 > 6. Setup is completed, Now open http://localhost/student-academic-project-management in browser
 > 7. Enter usernames and passwords that were mentioned in datatables
 
-## References
-> * https://judge0.com => Thanks for the programming environment API
+
 
